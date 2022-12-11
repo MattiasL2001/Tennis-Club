@@ -295,34 +295,11 @@ footer {
 }
 
 @media only screen and (max-width: 600px) {
-    #cart {
-        display: none;
-    }
-
-    #char {
-        display: none;
-    }
-
     #menu-icon {
         display: flex;
         width: 37px;
         height: 22px;
         margin-right: 20px;
-    }
-
-    #nav-left {
-        display: none;
-    }
-
-    #nav-right {
-        width: 100%;
-        margin-right: 0%;
-        margin-left: 20px;
-    }
-
-    #search {
-        height: 35px;
-        width: 100%;
     }
   }
 
@@ -351,33 +328,5 @@ footer {
 }
 
 @media only screen and (max-width: 500px) {
-    .item img {
-      height: 90%;
-      width: calc(350px * 0.9);
-      margin-top: 25px;
-    }
-}
 
-@media only screen and (max-width: 400px) {
-    .item img {
-      height: 70%;
-      width: calc(350px * 0.7);
-      margin-top: 25px;
-    }
-}
-
-@media only screen and (max-width: 335px) {
-    .item img {
-      height: 60%;
-      width: calc(350px * 0.6);
-      margin-top: 25px;
-    }
-
-    #filter, #sort {
-        font-size: 12px;
-    }
-
-    .select select {
-        font-size: 10px;
-    }
 }
