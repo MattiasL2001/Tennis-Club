@@ -353,6 +353,14 @@ footer p {
     #banor table, #bastu table {
         width: 90%;
     }
+
+    .form {
+        width: 50%;
+    }
+
+    .form select {
+        font-size: 12px;
+    }
 }
 
 @media only screen and (max-width: 500px) {
@@ -367,5 +375,23 @@ footer p {
     #hamburger img {
         width: 15px;
         height: 12px;
+    }
+
+    .form {
+        width: 70%;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .form {
+        width: 80%;
+    }
+
+    .form select {
+        font-size: 10px;
+    }
+
+    .form h2 {
+        font-size: 18px;
     }
 }
