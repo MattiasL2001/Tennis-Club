@@ -29,6 +29,27 @@ header h1 {
     justify-content: center;
 }
 
+#hamburger {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 0;
+    height: 0;
+  }
+
+  #hamburger img {
+    display: none;
+  }
+
+#hamburger img:hover {
+    cursor: pointer;
+    filter: invert(100%);
+    transition: .5s;
+}
+
 body {
     position: relative;
 }
@@ -233,16 +254,7 @@ footer p {
     margin-left: 15px;
 }
 
-@media only screen and (max-width: 600px) {
-    #menu-icon {
-        display: flex;
-        width: 37px;
-        height: 22px;
-        margin-right: 20px;
-    }
-  }
-
-  @media only screen and (max-width: 950px) {
+  @media only screen and (max-width: 1000px) {
       .item {
         flex-basis: calc(100% / 2);
       }
@@ -252,7 +264,74 @@ footer p {
         width: calc(350px * 0.65);
         margin-top: 25px;
       }
+
+      header {
+        display: flex;
+        justify-content: center;
+        height: 50px;
+      }
+
+      header h1 {
+        width: 60%;
+      }
+
+      nav {
+        display: none;
+      }
+
+      .nav-links {
+        display: none;
+      }
+
+      #banor table tr td, #bastu table tr td {
+        font-size: 14px;
+    }
+
+    #hamburger {
+        width: 50px;
+        height: 50px;
+      }
+
+      #hamburger img {
+        display: flex;
+        width: 25px;
+        height: 20px;
+      }
 }
+
+@media only screen and (max-width: 850px) {
+    #banor table tr td, #bastu table tr td {
+        font-size: 12px;
+    }
+}
+
+@media only screen and (max-width: 750px) {
+
+    #banor table, #bastu table {
+        width: 60%;
+    }
+
+    #banor table tr td, #bastu table tr td {
+        font-size: 12px;
+    }
+  }
+
+  @media only screen and (max-width: 600px) {
+    #menu-icon {
+        display: flex;
+        width: 37px;
+        height: 22px;
+        margin-right: 20px;
+    }
+
+    header h1 {
+        font-size: 24px;
+    }
+
+    #banor table, #bastu table {
+        width: 75%;
+    }
+  }
 
 @media only screen and (max-width: 599px) {
     .item {
@@ -264,9 +343,23 @@ footer p {
       width: calc(350px * 1);
       margin-top: 25px;
     }
+
+    #banor table, #bastu table {
+        width: 90%;
+    }
 }
 
 @media only screen and (max-width: 500px) {
-    
+    header h1 {
+        font-size: 16px;
+    }
 
+    #hamburger {
+        width: 50px;
+    }
+
+    #hamburger img {
+        width: 15px;
+        height: 12px;
+    }
 }
